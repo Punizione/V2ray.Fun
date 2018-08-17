@@ -6,6 +6,7 @@
           value="true"
           v-for="(item, i) in drawItems"
           :key="i"
+          :to="{ path: item.url }"
         >
           <v-list-tile-action>
             <v-icon v-html="item.icon"></v-icon>
@@ -47,10 +48,28 @@ export default {
     return {
       drawer: true,
       fixed: false,
-      drawItems: [{
-        icon: 'bubble_chart',
-        title: 'Inspire'
-      }],
+      drawItems: [
+        {
+          icon: 'bubble_chart',
+          title: 'Inspire',
+          url: '/index'
+        },
+        {
+          icon: 'bubble_chart',
+          title: 'Inspire',
+          url: '/index'
+        },
+        {
+          icon: 'bubble_chart',
+          title: 'Inspire',
+          url: '/index'
+        },
+        {
+          icon: 'bubble_chart',
+          title: 'Inspire',
+          url: '/index'
+        }
+      ],
       title: 'V2ray.Fun'
     }
   },
