@@ -180,7 +180,8 @@ def gen_server():
         server_tls['certificates'][0]['keyFile'] = "/root/.acme.sh/{0}/{0}.key".format(data['domain'],data['domain'])
         server['inbound']['streamSettings']['tlsSettings'] = server_tls
 
-    server_file = open("/etc/v2ray/config.json","w")
+    # /etc/v2ray
+    server_file = open("./config.json","w")
     server_file.write(json.dumps(server,indent=2))
     server_file.close()
 
@@ -352,11 +353,13 @@ def gen_client():
     if data['tls'] == "on":
         client['outbound']['streamSettings']['security'] = "tls"
 
-    client_file = open("/root/config.json","w")
+    # /root
+    client_file = open("./config1.json","w")
     client_file.write(json.dumps(client,indent=2))
     client_file.close()
 
-    client_file = open("static/config.json", "w")
+    # static
+    client_file = open("./config2.json", "w")
     client_file.write(json.dumps(client, indent=2))
     client_file.close()
 
