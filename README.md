@@ -1,4 +1,4 @@
-# V2ray.Fun
+![logo.png](logo.png)
 
 ## 简介
 
