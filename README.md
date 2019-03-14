@@ -1,4 +1,6 @@
-# V2ray.Fun
+# Vue改造中的V2ray.Fun（咕咕咕）
+
+
 
 ## 简介
 
